@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import {UserButton} from "@clerk/nextjs";
 
 export default function Home() {
-  return (
-      <div className="text-gray-500">
-        hallo
-      </div>
-  )
+    return (
+        <div className="text-gray-500">
+            <UserButton afterSignOutUrl="/"/>
+        </div>
+    )
 }
